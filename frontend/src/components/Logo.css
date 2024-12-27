@@ -1,0 +1,30 @@
+.logo-container {
+    display:flex;
+  }
+  
+  .logo-desktop {
+    display: none;
+    max-width: 70px;
+    max-height: 70px;
+  }
+  
+  .logo-mobile {
+    display: none;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  /* Show desktop logo on large screens */
+  @media (min-width: 768px) {
+    .logo-desktop {
+      display: inline-block;
+    }
+  }
+  
+  /* Show mobile logo on small screens */
+  @media (max-width: 767px) {
+    .logo-mobile {
+      display: inline-block;
+    }
+  }
+  
